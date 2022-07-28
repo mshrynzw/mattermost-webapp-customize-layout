@@ -9,9 +9,12 @@ const path = require('path');
 const {getWorkspaces} = require('./utils');
 
 for (const workspace of getWorkspaces()) {
-    console.log( path.join('node_modules', workspace.replace('packages/', '@mattermost/')));
+    const linkPath = path.join('node_modules', workspace.replace('packages/', '@mattermost/'));
+
+    console.log(`Removing symlink from ${linkPath}`);
+
     fs.unlink(
-        path.join('node_modules', workspace.replace('packages/', '@mattermost/')),
+        linkPath,
         (err) => {
             if (err) {
                 console.error('Unable to remove symlink before restoring from cache', err);

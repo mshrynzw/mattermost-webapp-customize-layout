@@ -9,9 +9,14 @@ const path = require('path');
 const {getWorkspaces} = require('./utils');
 
 for (const workspace of getWorkspaces()) {
+    const linkTarget = workspace;
+    const linkPath = path.join('node_modules', workspace.replace('packages/', '@mattermost/'));
+
+    console.log(`Adding symlink from ${linkPath} to ${linkTarget}`);
+
     fs.symlink(
-        workspace,
-        path.join('node_modules', workspace.replace('packages/','@mattermost/')),
+        linkTarget,
+        linkPath,
         'dir',
         (err) => {
             if (err) {
