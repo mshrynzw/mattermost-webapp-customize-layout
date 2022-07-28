@@ -33,7 +33,7 @@ jobs:
       - checkout
       - run: |
           npm ci
-      - *save_cache
+      - <<: save_cache
   check-deps:
     parameters:
       cve_data_directory:
@@ -51,7 +51,7 @@ jobs:
           command: |
             sudo mkdir /root/mattermost
             sudo ln -s ~/mattermost/mattermost-webapp /root/mattermost/mattermost-webapp; sudo chmod 777 /root
-      - *restore_cache
+      - <<: *restore_cache
       - run:
           name: Adjust permissions
           command: sudo chown -R `id -nu`:`id -ng` node_modules
@@ -98,7 +98,7 @@ jobs:
     working_directory: ~/mattermost/mattermost-webapp
     steps:
       - checkout
-      - *restore_cache
+      - <<: restore_cache
       - run: |
           npm run check
 
@@ -108,7 +108,7 @@ jobs:
     working_directory: ~/mattermost/mattermost-webapp
     steps:
       - checkout
-      - *restore_cache
+      - <<: restore_cache
       - run: |
           cp i18n/en.json /tmp/en.json
           mkdir -p /tmp/fake-mobile-dir/assets/base/i18n/
@@ -128,7 +128,7 @@ jobs:
     working_directory: ~/mattermost/mattermost-webapp
     steps:
       - checkout
-      - *restore_cache
+      - <<: restore_cache
       - run: |
           npm run check-types
 
@@ -138,7 +138,7 @@ jobs:
     working_directory: ~/mattermost/mattermost-webapp
     steps:
       - checkout
-      - *restore_cache
+      - <<: restore_cache
       - run: |
           npm run test-ci
       - store_test_results:
@@ -151,7 +151,7 @@ jobs:
     working_directory: ~/mattermost/mattermost-webapp
     steps:
       - checkout
-      - *restore_cache
+      - <<: restore_cache
       - run: |
           node --version
           npm version
