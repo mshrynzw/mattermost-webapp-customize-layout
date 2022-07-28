@@ -15,14 +15,14 @@ aliases:
     - restore_cache:
       key: dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}-9
     - run: |
-      node scripts/restore-symlinks
+        node scripts/restore-symlinks
   - &save_cache
     - save_cache:
       key: dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}-9
       paths:
         - ~/mattermost/mattermost-webapp/node_modules
     - run: |
-      node scripts/remove-symlinks
+        node scripts/remove-symlinks
 
 jobs:
   install:
