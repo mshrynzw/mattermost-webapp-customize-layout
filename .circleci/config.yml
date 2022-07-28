@@ -15,7 +15,7 @@ commands:
     description: "Restore node_modules from the cache and fix the symlinks used for NPM workspaces"
     steps:
       - restore_cache:
-          key: dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}-10
+          key: dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}-11
       - run: |
           ll node_modules/@mattermost
           node scripts/restore-symlinks
@@ -28,7 +28,7 @@ commands:
           node scripts/remove-symlinks
           ll node_modules/@mattermost
       - save_cache:
-          key: dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}-10
+          key: dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}-11
           paths:
               - ~/mattermost/mattermost-webapp/node_modules
 
