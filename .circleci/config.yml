@@ -17,16 +17,16 @@ commands:
       - restore_cache:
           key: dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}-11
       - run: |
-          ll node_modules/@mattermost
+          ls -l node_modules/@mattermost
           node scripts/restore-symlinks
-          ll node_modules/@mattermost
+          ls -l node_modules/@mattermost
   save_node_modules_cache:
     description: "Caches node_modules without the symlinks used for NPM workspaces"
     steps:
       - run: |
-          ll node_modules/@mattermost
+          ls -l node_modules/@mattermost
           node scripts/remove-symlinks
-          ll node_modules/@mattermost
+          ls -l node_modules/@mattermost
       - save_cache:
           key: dependencies-{{ .Branch }}-{{ checksum "package-lock.json" }}-11
           paths:
