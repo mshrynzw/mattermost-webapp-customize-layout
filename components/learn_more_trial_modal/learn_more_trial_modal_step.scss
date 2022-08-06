@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
 .LearnMoreTrialModalStep {
     &.slide-container {
         padding: 0 24px;
@@ -49,7 +51,7 @@
             height: 32px;
             margin-top: 15px;
             color: rgba(var(--center-channel-color-rgb), 0.72);
-            font-family: "Open Sans";
+            font-family: "Noto Sans JP", "Open Sans";
             font-size: 12px;
             font-style: normal;
             font-weight: normal;

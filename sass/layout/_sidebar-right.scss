@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
 .sidebar--right {
     position: absolute;
@@ -175,7 +176,7 @@
         margin: 0 0 0 8px;
         color: rgba(var(--center-channel-color-rgb), 0.56);
         cursor: pointer;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Noto Sans JP", "Open Sans", sans-serif;
         font-size: 12px;
         font-weight: normal;
         line-height: 2.4rem;
@@ -202,7 +203,7 @@
         border-left: 1px solid rgba(var(--center-channel-color-rgb), 0.16);
         margin: 0 0 0 8px;
         color: rgba(var(--center-channel-color-rgb), 0.56);
-        font-family: "Open Sans", sans-serif;
+        font-family: "Noto Sans JP", "Open Sans", sans-serif;
         font-size: 12px;
         font-weight: normal;
         line-height: 2.4rem;

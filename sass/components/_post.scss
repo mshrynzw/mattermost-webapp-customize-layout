@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
 .app__body {
     .custom-textarea {
@@ -577,7 +578,7 @@
     display: inline-block;
     margin: 8px 0 4px;
     color: rgba(var(--center-channel-color-rgb), 0.64);
-    font-family: "Open Sans", sans-serif;
+    font-family: "Noto Sans JP", "Open Sans", sans-serif;
 }
 
 .post-create-footer {

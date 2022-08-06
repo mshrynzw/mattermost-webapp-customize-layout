@@ -1,4 +1,5 @@
 @charset 'UTF-8';
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
 b,
 strong {
@@ -30,13 +31,13 @@ a {
 body {
     @include font-smoothing;
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans JP', 'Open Sans', sans-serif;
 }
 
 h1,
 h2,
 h3 {
-    font-family: Metropolis, sans-serif;
+    font-family: 'Noto Sans JP', Metropolis, sans-serif;
 }
 
 h1 {
@@ -106,42 +107,42 @@ ol {
 
 // Metropolis font definitions
 @font-face {
-    font-family: 'Metropolis';
+    font-family: 'Noto Sans JP', 'Metropolis';
     font-style: normal;
     font-weight: 600;
     src: url('../fonts/Metropolis-SemiBold.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Metropolis';
+    font-family: 'Noto Sans JP', 'Metropolis';
     font-style: italic;
     font-weight: 600;
     src: url('../fonts/Metropolis-SemiBoldItalic.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Metropolis';
+    font-family: 'Noto Sans JP', 'Metropolis';
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/Metropolis-Regular.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Metropolis';
+    font-family: 'Noto Sans JP', 'Metropolis';
     font-style: italic;
     font-weight: 400;
     src: url('../fonts/Metropolis-RegularItalic.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Metropolis';
+    font-family: 'Noto Sans JP', 'Metropolis';
     font-style: normal;
     font-weight: 300;
     src: url('../fonts/Metropolis-Light.woff') format('woff');
 }
 
 @font-face {
-    font-family: 'Metropolis';
+    font-family: 'Noto Sans JP', 'Metropolis';
     font-style: italic;
     font-weight: 300;
     src: url('../fonts/Metropolis-LightItalic.woff') format('woff');
@@ -149,7 +150,7 @@ ol {
 
 /* open-sans-300 - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Noto Sans JP', 'Open Sans';
     font-style: normal;
     font-weight: 300;
     src:
@@ -160,7 +161,7 @@ ol {
 
 /* open-sans-300italic - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Noto Sans JP', 'Open Sans';
     font-style: italic;
     font-weight: 300;
     src:
@@ -171,7 +172,7 @@ ol {
 
 /* open-sans-regular - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Noto Sans JP', 'Open Sans';
     font-style: normal;
     font-weight: 400;
     src:
@@ -182,7 +183,7 @@ ol {
 
 /* open-sans-italic - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Noto Sans JP', 'Open Sans';
     font-style: italic;
     font-weight: 400;
     src:
@@ -193,7 +194,7 @@ ol {
 
 /* open-sans-600italic - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Noto Sans JP', 'Open Sans';
     font-style: italic;
     font-weight: 600;
     src:
@@ -204,7 +205,7 @@ ol {
 
 /* open-sans-600 - vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic */
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Noto Sans JP', 'Open Sans';
     font-style: normal;
     font-weight: 600;
     src:
@@ -214,14 +215,14 @@ ol {
 }
 
 .app__body.font--open_sans {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Noto Sans JP', 'Open Sans', sans-serif;
 }
 
 .app__body {
     h1,
     h2,
     h3 {
-        font-family: Metropolis, sans-serif;
+        font-family: 'Noto Sans JP', Metropolis, sans-serif;
     }
 }
 

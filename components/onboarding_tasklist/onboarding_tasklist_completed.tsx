@@ -84,7 +84,7 @@ const CompletedWrapper = styled.div`
         width: 90%;
         margin-top: 15px;
         color: rgba(var(--center-channel-color-rgb), 0.72);
-        font-family: "Open Sans";
+        font-family: "Noto Sans JP", "Open Sans";
         font-style: normal;
         font-weight: normal;
         line-height: 16px;
