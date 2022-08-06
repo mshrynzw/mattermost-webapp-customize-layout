@@ -4,7 +4,7 @@
 make package
 ll
 pwd
-mv /opt/mattermost/client /opt/mattermost/client.bak
+mv /opt/mattermost/client /opt/mattermost/client.bak-$(date +'%F-%H-%M')
 tar xvzf mattermost-webapp.tar.gz  -C /opt/mattermost
 ll /opt/mattermost/
 chown mattermost:mattermost /opt/mattermost/client
